@@ -13,13 +13,12 @@ def numDuplicates(name,price,weight):
             if productArray[i]==check:
                 duplicates+=1
                 productArray[i]=0
-        print(productArray)
         try:
-            productArray.remove(0)
+            productArray.remove(0) #removes all instances of the value 0
         except:
             print("no Zero")
         if len(productArray)!=0:
-            productArray.pop(0)
+            productArray.pop(0) #removes the item at index 0
 
 
     return(duplicates)
